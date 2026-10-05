@@ -5,14 +5,15 @@ export const maps = 'https://www.google.com/maps/place/Ekara+Design/@3.1963226,1
 export const facebook = 'https://facebook.com/112933178458369'
 export const instagram = 'https://www.instagram.com/ekara_design_studio/'
 export const pitchWa = 'https://wa.me/601151198497'
+export const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`
 
 export const projects = [
-  { titleEN: 'Setapak Soft Living', titleMS: 'Ruang Tamu Lembut Setapak', typeEN: 'Living room', typeMS: 'Ruang tamu', img: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=80' },
-  { titleEN: 'Calm Bedroom Suite', titleMS: 'Suite Bilik Tidur Tenang', typeEN: 'Bedroom makeover', typeMS: 'Ubah suai bilik tidur', img: 'https://images.unsplash.com/photo-1615874959474-d609969a20ed?w=1200&q=80' },
-  { titleEN: 'Wall & Décor Story', titleMS: 'Cerita Dinding & Dekorasi', typeEN: 'Wall styling', typeMS: 'Styling dinding', img: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=80' },
-  { titleEN: 'Light Kitchen Corner', titleMS: 'Sudut Dapur Cerah', typeEN: 'Kitchen', typeMS: 'Dapur', img: 'https://images.unsplash.com/photo-1556912173-46c336c7fd55?w=1200&q=80' },
-  { titleEN: 'Dining in Sage', titleMS: 'Ruang Makan Sage', typeEN: 'Dining', typeMS: 'Ruang makan', img: 'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=1200&q=80' },
-  { titleEN: 'Home Office Nook', titleMS: 'Sudut Pejabat Rumah', typeEN: 'Work corner', typeMS: 'Sudut kerja', img: 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=1200&q=80' },
+  { titleEN: 'Setapak Soft Living', titleMS: 'Ruang Tamu Lembut Setapak', typeEN: 'Living room', typeMS: 'Ruang tamu', img: 'images/p1.jpg' },
+  { titleEN: 'Calm Bedroom Suite', titleMS: 'Suite Bilik Tidur Tenang', typeEN: 'Bedroom makeover', typeMS: 'Ubah suai bilik tidur', img: 'images/p2.jpg' },
+  { titleEN: 'Wall & Décor Story', titleMS: 'Cerita Dinding & Dekorasi', typeEN: 'Wall styling', typeMS: 'Styling dinding', img: 'images/p3.jpg' },
+  { titleEN: 'Light Kitchen Corner', titleMS: 'Sudut Dapur Cerah', typeEN: 'Kitchen', typeMS: 'Dapur', img: 'images/p4.jpg' },
+  { titleEN: 'Dining in Sage', titleMS: 'Ruang Makan Sage', typeEN: 'Dining', typeMS: 'Ruang makan', img: 'images/p5.jpg' },
+  { titleEN: 'Home Office Nook', titleMS: 'Sudut Pejabat Rumah', typeEN: 'Work corner', typeMS: 'Sudut kerja', img: 'images/p6.jpg' },
 ]
 
 export const dict = {
@@ -48,7 +49,7 @@ export const dict = {
     contact_phone: 'Call', contact_wa: 'WhatsApp', contact_email: 'Email', contact_map: 'Maps', contact_fb: 'Facebook', contact_ig: 'Instagram',
     footer_pitch: 'Website concept prepared for this studio. Not an official site yet — open to making it yours.',
     footer_pitch_cta: 'Message mr.bagowabair', footer_copy: '© Ekara Design · Concept site',
-    lang_en: 'EN', lang_ms: 'BM', sticky_wa: 'WhatsApp',
+    lang_en: 'EN', lang_ms: 'BM', sticky_wa: 'WhatsApp', menu_open: 'Menu', menu_close: 'Close',
   },
   ms: {
     nav_about: 'Tentang', nav_services: 'Perkhidmatan', nav_work: 'Kerja', nav_process: 'Proses', nav_contact: 'Hubungi', nav_cta: 'Chat WhatsApp',
@@ -82,6 +83,6 @@ export const dict = {
     contact_phone: 'Telefon', contact_wa: 'WhatsApp', contact_email: 'E-mel', contact_map: 'Maps', contact_fb: 'Facebook', contact_ig: 'Instagram',
     footer_pitch: 'Konsep laman web disediakan untuk studio ini. Bukan laman rasmi lagi — sedia dijadikan milik anda.',
     footer_pitch_cta: 'Mesej mr.bagowabair', footer_copy: '© Ekara Design · Laman konsep',
-    lang_en: 'EN', lang_ms: 'BM', sticky_wa: 'WhatsApp',
+    lang_en: 'EN', lang_ms: 'BM', sticky_wa: 'WhatsApp', menu_open: 'Menu', menu_close: 'Tutup',
   },
 } as const
