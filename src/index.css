@@ -5,3 +5,13 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 body { @apply bg-limestone text-ink font-sans antialiased overflow-x-hidden; }
 ::selection { @apply bg-sage-500 text-white; }
 img { max-width: 100%; height: auto; }
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.75s cubic-bezier(0.22,1,0.36,1), transform 0.75s cubic-bezier(0.22,1,0.36,1); }
+.reveal.is-visible { opacity: 1; transform: none; }
+.img-zoom { @apply overflow-hidden; }
+.img-zoom img { @apply transition duration-700 ease-out will-change-transform; }
+.img-zoom:hover img { transform: scale(1.05); }
+.glass-header {
+  background: rgba(244, 241, 234, 0.8);
+  backdrop-filter: blur(18px) saturate(1.15);
+  -webkit-backdrop-filter: blur(18px) saturate(1.15);
+}
